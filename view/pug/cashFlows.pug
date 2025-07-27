@@ -1,0 +1,48 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Loan cashflows'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanRepaymentCalculatorMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      table(style='min-width:400px')
+        tr
+          td Loan type: 
+          td #{loanType}
+        tr  
+          td Description: 
+          td #{description}
+        tr  
+          td Amount in £: 
+          td #{amount}
+        tr  
+          td Start date: 
+          td #{start}
+        tr  
+          td Term in years: 
+          td #{term} 
+        tr  
+          td Interest rate: 
+          td #{rate}
+      p
+      table
+        tr
+          th Period start date
+          th Interest paid
+          th Principal paid
+          th Total payment
+          th Balance
+        for cashflow of cashflows
+          tr
+            td(class='list') #{cashflow.periodStartDate}
+            td(class='list') #{cashflow.interest}
+            td(class='list') #{cashflow.principal}
+            td(class='list') #{cashflow.payment}
+            td(class='list') #{cashflow.balance}

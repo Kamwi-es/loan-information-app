@@ -1,0 +1,236 @@
+/* 
+loanapp.css
+*/
+
+/* default settings */
+body
+{
+    font-weight: normal;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    margin: auto;
+    padding: 0px;
+}
+
+/* table layout */
+table
+{
+    margin:auto;
+    padding: 0px;
+    border: 0px;
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    empty-cells: show;
+    min-width:200px;
+    max-width:1000px;
+}
+
+th
+{
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: #666;
+}
+
+td
+{
+    padding: 8px; 
+    border: 0px;
+    text-align: left;
+    vertical-align: middle;
+    color: #666;
+}
+
+td.list 
+{
+    border: 1px solid black;
+}
+
+td.logo
+{
+     text-align: right;
+}
+
+td.heading
+{
+     text-align: left;
+     color: #3351a3; 
+}
+
+td.message 
+{
+    text-align: center;
+    color: red;
+}
+
+td.formbutton 
+{
+    text-align: right
+}
+
+/* controls */
+
+input
+{
+    padding: 4px;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+input.readonly
+{
+    background-color: #eee
+}
+
+input[type=submit] /* submit button */
+{
+    background-color: #eee;
+    border-radius:5px;
+}
+
+button /* other buttons */
+{
+    border: 1px solid black;
+    border-radius: 5px;    
+    font-size: 1em;
+    background-color: #eee;
+}
+
+textarea 
+{
+    font-family: sans-serif; /* don't know why you have to set this again here */
+    border: 1px solid black;
+    height: 5em;
+    width: 30em  
+}
+
+select
+{
+    font-size: 1em;
+}
+
+/* links */
+
+
+.heading
+{
+    box-sizing: border-box;
+}
+
+.menubar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid black;
+}
+
+.body
+{
+    margin-left: 200px;
+}
+
+.text
+{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.subheading
+{
+    text-align: left;
+    margin-left: 20px;
+    color: #3351a3;
+    font-weight: bold;
+}
+
+.text-centred
+{
+    margin-left: 20px;
+    text-align: center;
+}
+
+.text-centredlarge
+{
+    margin-left: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.menuheading 
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+    display: block;
+}
+
+.menuheading a 
+{
+    color: #3351a3;
+    text-decoration:none;
+    padding-top: 5px;
+    padding-left: 0px;
+    display: block;
+}
+
+.menuheading a:hover 
+{
+    text-decoration:underline;
+    cursor:pointer
+}
+
+/* clickable button to trigger dropdownmenu*/
+.menuheadingbutton
+{
+    border: none;
+    color: #3351a3;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.menu 
+{
+  display: none;
+  /*display: block;*/
+}
+
+/* Links inside the dropdown */
+.menu a 
+{
+  color: #3351a3;
+  padding-top: 5px;
+  padding-left: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover
+{
+    text-decoration:underline;
+    cursor:pointer  
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.display 
+{
+  display:block;
+}

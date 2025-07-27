@@ -1,0 +1,23 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Questions To Ask Before Borrowing';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='subheading') Ask yourself:
+      p(class='text') •	Do I need this loan or is it a want?
+      p(class='text') •	Can I repay it comfortably each month?
+      p(class='text') •	What happens if my income drops?
+      p(class='text') •	Are there cheaper options?
+      p(class='text')
+      p(class='text')
+      p(class='text')
+    

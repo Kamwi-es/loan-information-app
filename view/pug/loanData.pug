@@ -1,0 +1,39 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanRepaymentCalculatorMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text-centred') This page allows you to enter data about a #{loanType} loan and view its cash flows.
+      table(style='min-width:400px')
+        tr
+          td Loan type: 
+          td #{loanType}
+        tr  
+          td Description: 
+          td #{description}
+        tr  
+          td Amount in £: 
+          td #{amount}
+        tr  
+          td Start date: 
+          td #{start}
+        tr  
+          td Term in years: 
+          td #{term} 
+        tr  
+          td Interest rate %: 
+          td #{rate}
+        tr
+          td(class='formbutton', colspan='2') 
+            a(href='/' + appname + '/loanEdit/' + loanType)
+              button(type="button") Edit
+            a(href='/' + appname + '/cashFlows/' + loanType)
+              button(type="button") Cash flows

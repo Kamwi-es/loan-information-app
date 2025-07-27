@@ -1,0 +1,42 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Repayment Plans';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') 
+      p(class='subheading') What Is a Repayment Plan?
+      p(class='text') A repayment plan is an agreement between a borrower and a lender for how a debt will be paid off over time. More specifically, repayment plans often refer to special agreements for making more affordable debt payments when a borrower is struggling to pay
+      p(class='text') Repayment is usually monthly, and your plan depends on:
+      span(class='subheading') - Term length: 
+      span Longer terms mean lower monthly payments but more interest over time.
+      p(class='text')
+      span(class='subheading') - Grace periods: 
+      span Some loans offer time before you must start paying (common with student loans).
+      p(class='text')
+      span(class='subheading') - Amortization: 
+      span Loans may be structured so you pay more interest in the beginning and more principal later.
+      p(class='text') Missing payments can lead to late fees, higher interest, or default.
+      p(class='text') A repayment plan is an agreement between you and a lender for how you'll make payments toward a debt. Installment debts such as student loans and personal loans come with standard repayment plans, which reflect the repayment terms you agree to when you apply for the loan.
+      p(class='text')
+      p(class='text') But some loans, such as mortgages, student loans and credit cards, may have special repayment plans that are specifically designed to help make paying off your debt more affordable if you're struggling to make payments. Here's what you need to know about repayment plans and how they work, plus how to decide if entering into a repayment plan is the right move
+      p(class='text')
+      p(class='subheading') How Does a Repayment Plan Work?
+      p(class='text')
+      p(class='text') A repayment plan is a structured way to repay a loan over a period of time, often with fixed monthly payments. Repayment plans work differently depending on the type of debt in question.
+      p(class='text')
+      p(class='text') Personal loans and other types of installment credit automatically include a predetermined repayment plan you agree to when you apply for the debt. These debts have specific loan terms, interest rates and monthly payment amounts that typically won't change as long as the debt is in repayment.
+      p(class='text')
+      p(class='text') However, repayment plans can also refer to an optional arrangement you can make with a lender to repay revolving debt, such as credit cards. People typically enter into these types of repayment plans when they're anticipating difficulty or are already struggling with making payments.
+      p(class='text') 
+      p(class='text')
+      p(class='text')
+    

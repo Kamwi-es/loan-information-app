@@ -1,0 +1,47 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Key Loan Terms';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') Understanding these terms is critical before taking any loan:
+      p(class='text')
+      span(class='subheading') Repayment Schedule: 
+      span Details how and when the loan will be repaid, including the frequency and amount of payments. 
+      p(class='text')
+      span(class='subheading') Fees: 
+      span Any additional charges associated with the loan, such as origination fees or prepayment penalties. 
+      p(class='text')
+      span(class='subheading') Prepayment: 
+      span Paying off the loan before the end of the loan term. 
+      p(class='text')
+      span(class='subheading') Principal: 
+      span The original amount you borrow. 
+      p(class='text')
+      span(class='subheading') Interest: 
+      span The cost of borrowing, usually expressed as a percentage. It can be fixed or variable 
+      p(class='text')
+      span(class='subheading') APR: (Annual Percentage Rate): 
+      span The total yearly cost of the loan including interest and fees
+      p(class='text')
+      span(class='subheading') Loan Term: 
+      span The length of time over which the loan must be repaid.
+      p(class='text')
+      span(class='subheading') Collateral: 
+      span An asset (e.g., your car or house) the lender can take if you don’t repay.
+      p(class='text')
+      span(class='subheading') Default: 
+      span A breach of the loan agreement, such as failing to make payments on time, which can result in penalties or legal action. 
+      p(class='text')
+      span(class='subheading') Entire Agreement Clause:
+      span This clause clarifies that the written loan agreement is the complete and final agreement between the parties. 
+      p(class='text')
+    

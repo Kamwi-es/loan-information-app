@@ -1,0 +1,26 @@
+doctype html
+// Login page
+- var appname = 'loanapp';
+- var title = 'Loan app login'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body
+    form(name='login', method='POST', action='/'+appname+'/loginAction')
+      include header.pug
+      table
+        tr
+          td Username: 
+          td 
+            input(type='text', name='username', value=username)
+        tr  
+          td Password: 
+          td 
+            input(type='password', name='password', value=password)
+        tr
+          td(class='formbutton', colspan='2') 
+            input(type='submit', name='submit', value='Ok')
+            input(type='submit', name='submit', value='Register')
+        tr
+          td(class='message', colspan='2') #{errormessage}

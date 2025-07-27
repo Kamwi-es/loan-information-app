@@ -1,0 +1,29 @@
+doctype html
+// error page
+- var appname = 'loanapp';
+- var title = 'Loan app: error'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body
+    include header.pug
+    div
+      include menu.pug
+    div  
+      table
+        tr
+          td Message:
+          td #{error.message}
+        tr
+          td Error number:
+          td #{error.errno}
+        tr
+          td Stack trace:
+          td !{error.stack}
+        tr
+          td
+          td(class='formbutton') 
+            a(href='/' + appname + '/')
+              button(type="button") OK
+

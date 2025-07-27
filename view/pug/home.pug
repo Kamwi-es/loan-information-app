@@ -1,0 +1,20 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Loan Information Application for Borrowers'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text-centredlarge') Know Your Loan
+      p(class='text')
+      p(class='text-centredlarge') Explore key loan concepts to make better borrowing decisions.
+      p(class='text')
+      p(class='text')
+    

@@ -1,0 +1,26 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'How Interest Works';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='subheading') How Interest Works
+      p(class='text')
+      p(class='text') There are two main types of interest:
+      p(class='text') Fixed Interest: Stays the same over the life of the loan. Predictable.
+      p(class='text') Variable Interest: Changes based on the market rate. Payments may go up or down.
+      p(class='subheading') Example:
+      p(class='text') Borrow $1,000 at 10% annual interest for 1 year → repay $1,100.
+      p(class='text') If you borrowed £1,000 at an annual interest rate of 16.9%, after a year you would owe £1,169.
+      p(class='text') Compound interest (interest on interest) can make loans more expensive over time.
+      p(class='text')
+      p(class='text')
+    

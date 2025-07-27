@@ -1,0 +1,34 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Mortgage loans'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanTypeMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') A mortgage loan is a type of loan used to purchase real estate, where the property itself serves as collateral for the loan. Essentially, it's an agreement between a borrower and a lender where the borrower receives funds to buy a property, and the lender secures the loan by placing a legal claim (a mortgage) on that property. If the borrower fails to repay the loan, the lender can foreclose on the property to recover their losses. 
+      p(class='text') 
+      p(class='subheading') Secured Loan
+      p(class='text') A mortgage is a secured loan, meaning the lender has a claim on the borrower's property as collateral. If the borrower defaults (fails to make payments), the lender can seize and sell the property to recoup their investment. 
+      p(class='subheading') Purpose
+      p(class='text') Mortgages are primarily used to finance the purchase of real estate, such as houses or land. They can also be used for refinancing an existing mortgage or for borrowing against the value of a property already owned. 
+      p(class='subheading') Repayment
+      p(class='text') Mortgages are typically repaid over a long period, often 25 years or more, with regular monthly payments that include both the principal (the original loan amount) and interest. 
+      p(class='subheading') Types of Mortgages
+      p(class='text') There are various types of mortgages, including fixed-rate mortgages (where the interest rate remains the same throughout the loan term) and variable-rate mortgages (where the interest rate can fluctuate). 
+      p(class='subheading') Key Players
+      p(class='text') The main parties involved in a mortgage are the borrower (the individual or entity buying the property) and the lender (a bank, building society, or other financial institution). 
+      p(class='subheading') Legal Framework
+      p(class='text') Mortgages are governed by specific laws and regulations, and the legal processes for origination, servicing, and foreclosure vary by jurisdiction. 
+      p(class='text') 
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+    

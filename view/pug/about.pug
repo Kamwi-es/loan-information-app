@@ -1,0 +1,32 @@
+doctype html
+// about page
+- var title = 'About loanapp'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body') 
+      table
+        tr
+          td Application:
+          td #{appname}
+        tr
+          td Version:
+          td #{version}
+        tr
+          td Author:
+          td #{author}
+        tr
+          td Date:
+          td #{date}
+        tr
+          td
+          td(class='formbutton') 
+            a(href='/' + appname + '/')
+              button(type="button") Ok
+

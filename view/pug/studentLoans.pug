@@ -1,0 +1,37 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Student Loans'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanTypeMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') A student loan is a type of loan specifically designed to help students pay for post-secondary education and associated expenses, such as tuition, books, and living costs. These loans differ from standard loans due to potentially lower interest rates and deferred repayment options while the student is still in school. In many countries, student loans are also subject to specific regulations regarding renegotiation and bankruptcy. 
+      p(class='subheading') Key aspects of student loans
+      p(class='subheading') Purpose
+      p(class='text') Student loans are intended to cover educational expenses, including tuition fees, living costs, and other study-related costs. 
+      p(class='subheading') Repayment
+      p(class='text') Repayment typically begins after graduation or when the student's income reaches a certain threshold. The amount repaid each month often depends on the borrower's income, rather than the loan balance. 
+      p(class='subheading') Interest
+      p(class='text') Interest is usually added to the loan from the time the funds are borrowed. 
+      p(class='subheading') Flexible Repayment
+      p(class='text') Some student loan programs offer income-contingent repayment plans, where the repayment amount adjusts based on the borrower's income, providing flexibility for those with fluctuating earnings. 
+      p(class='text') Student loans can be offered by government institutions or private lenders. 
+      p(class='subheading') Differing from Bank Loans
+      p(class='text') Unlike traditional bank loans, student loans often have lower interest rates and more lenient repayment terms, especially for those with lower incomes. 
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+    

@@ -1,0 +1,29 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Loan Eligibility And Credit Score';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+
+      p(class='subheading') 
+      p(class='text') Lenders look at:
+      p(class='subheading') Income
+      p(class='text')
+      p(class='text') 
+      p(class='subheading') Employment stability
+      p(class='text')
+      p(class='text')
+      p(class='subheading') Credit history and score
+      p(class='text')
+      p(class='text')
+      p(class='text') Higher credit scores mean better loan offers. Missed payments or existing debt can reduce eligibility.
+      p(class='text')
+    

@@ -1,0 +1,37 @@
+script.
+  function toggle(id)
+  {
+    document.getElementById(id).classList.toggle("display");
+  }
+div(class='menuheading') 
+  a(href='/' + appname + '/home') Home
+  a(href='/' + appname + '/whatisaloan') What is a Loan?
+div(class='menuheading')
+  button(onclick='toggle("loanTypeMenu")', class='menuheadingbutton') Types of Loan
+div(id='loanTypeMenu', class='menu')
+  a(href='/' + appname + '/personalLoans') Personal Loans
+  a(href='/' + appname + '/studentLoans') Student Loans
+  a(href='/' + appname + '/mortgageLoans') Mortgage Loan
+  a(href='/' + appname + '/autoLoans') Auto Loans  
+  a(href='/' + appname + '/paydayLoans') Payday Loans
+div(class='menuheading')
+  button(onclick='toggle("loanContentsMenu")', class='menuheadingbutton') Loan Contents
+div(id='loanContentsMenu', class='menu')
+  a(href='/' + appname + '/keyLoanTerms') Key Loan Terms
+  a(href='/' + appname + '/howInterestWorks') How interest works
+  a(href='/' + appname + '/repaymentplans') Repayment Plans
+  a(href='/' + appname + '/totalCostOfaLoan') Total Cost of a Loan
+  a(href='/' + appname + '/loanEligibilityAndCreditScore') Loan Eligibility and Credit Score
+  a(href='/' + appname + '/riskAndWarnings') Risks and Warnings
+  a(href='/' + appname + '/questionsToAskBeforeBorrowing') Questions to Ask Before Borrowing
+div(class='menuheading')
+  button(onclick='toggle("loanRepaymentCalculatorMenu")', class='menuheadingbutton') Loan Repayment Calculator
+div(id='loanRepaymentCalculatorMenu', class='menu')  
+  a(href='/' + appname + '/loanData/personal') Personal Loan Calculator
+  a(href='/' + appname + '/loanData/student') Student Loan Calculator
+  a(href='/' + appname + '/loanData/mortgage') Mortgage Loan Calculator
+  a(href='/' + appname + '/loanData/auto') Auto Loan Calculator            
+  a(href='/' + appname + '/loanData/payday') Payday Loan Calculator
+div(class='menuheading') 
+  a(href='/' + appname + '/about') About
+  a(href='/' + appname + '/exit') Logout

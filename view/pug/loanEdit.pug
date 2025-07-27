@@ -1,0 +1,42 @@
+doctype html
+// Edit loan page
+- var appname = 'loanapp';
+- var title = 'Edit loan data';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body
+    form(name='loanEdit', method='POST', action='/'+appname+'/loanEditAction') 
+      include header.pug
+      table(style='min-width:800px')
+        tr
+          td Loan type 
+          td 
+            input(class='readonly', type='text', name='loanType', readonly, value=loanType)
+        tr  
+          td Description: 
+          td 
+            textarea(name='description') #{description}
+        tr  
+          td Amount in £: 
+          td 
+            input(type='text', name='amount', value=amount)
+        tr  
+          td Start date: 
+          td 
+            input(type='text', name='start', value=start)
+        tr  
+          td Term in years: 
+          td 
+            input(type='text', name='term', value=term)
+        tr  
+          td Interest rate %: 
+          td 
+            input(type='text', name='rate', value=rate)
+        tr
+          td(class='formbutton', colspan='2') 
+            input(type='submit', name='action', value='Save')
+            input(type='submit', name='action', value='Cancel')   
+        tr
+          td(class='message', colspan='2') #{errormessage}

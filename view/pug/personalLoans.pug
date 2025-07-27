@@ -1,0 +1,52 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Personal Loans'
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanTypeMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') There are different types of loans depending on the purpose and repayment terms.
+      p(class='text')
+      p(class='subheading') Personal Loans
+      p(class='text')
+      p(class='text') These are unsecured and can be used for any purpose like home repair, travel, or emergencies.
+      p(class='text') A personal loan lets you borrow money to pay for something special, like a holiday, car or home renovations. You have to repay it with interest over a fixed term, usually between one and seven years.
+      p(class='text')
+      p(class='text') Getting the best deal on a personal loan can save you thousands in interest and fees.
+      p(class='text')
+      p(class='subheading') Get the best personal loan for you
+      p(class='text') Most people shop around before they pick a holiday or buy a car. Shopping around for the right loan can save you thousands in interest and fees.
+      p(class='text')
+      p(class='subheading') Secured or unsecured loan
+      p(class='text') With a secured loan you provide an asset, such as your car, as security for the loan. If you don't pay the loan back on time, the lender can repossess your asset and sell it.
+      p(class='text')
+      p(class='text') With an unsecured loan, you don't have to provide an asset as security. But the interest rate will be higher, and you may need a loan guarantor. If you fail to pay back the loan, the lender can still take you to court to get back the money you borrowed.
+      p(class='text') 
+      p(class='subheading') Loan guarantor
+      p(class='text') Some lenders will give you a lower interest rate if you have a loan guarantor. Before you ask a family member or friend to go guarantor for you, make sure you both understand the risks for a guarantor.
+      p(class='subheading') If you guarantee a loan for a family member or friend, you're known as the guarantor. You are responsible for paying back the entire loan if the borrower can't.
+      p(class='text') 
+      p(class='text') If a lender doesn't want to lend money to someone on their own, the lender can ask for a guarantee.
+      p(class='text') 
+      p(class='text') Before you agree to be a guarantor, think carefully about your own finances. Make sure you understand the loan contract and know the risks.
+      p(class='text')
+      p(class='text') If you're feeling pressured or unsure about a financial decision, speak to a financial counsellor. It's free and confidential.
+      p(class='text')
+      p(class='subheading') Know the risks of going guarantor
+      p(class='text')
+      p(class='text') If you're thinking about guaranteeing a loan, make sure you understand the risks. Take the same care as if you were taking out a loan for yourself. 
+      p(class='text')
+      p(class='subheading') You may have to pay back the entire debt
+      p(class='text')
+      p(class='text') If the borrower can't make the loan repayments, you will have to pay back the entire loan amount plus interest. If you can't make the repayments, the lender could repossess your home or car if it was used as security for the loan. 
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')

@@ -1,0 +1,32 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Toatal Cost of a Loan';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') 
+      p(class='subheading') Total Cost of a Loan (Cost of Borrowing overtime)
+      p(class='text') The total cost of a loan is the sum of the principal amount borrowed plus the total interest paid over the loan term, along with any associated fees. The Annual Percentage Rate (APR) is a key figure that reflects this total cost, as it includes both the interest rate and certain fees, providing a comprehensive view of the loan's expense. 
+      p(class='text') Always look at the total cost, not just the monthly payment.
+      p(class='text') 
+      p(class='subheading') For example:
+      p(class='text') A $5,000 loan at 10% over 3 years costs ≈ $5,800
+      p(class='text') That same loan over 6 years could cost ≈ $6,600
+      p(class='text') Costs rise with longer terms and higher interest.
+      p(class='text')
+      p(class='subheading') To calculate the total cost, you can use a loan calculator or manually calculate:
+      p(class='text') 1. Calculate total interest: Multiply the monthly interest rate by the number of months in the loan term and by the principal amount. 
+      p(class='text') 2. Calculate total amount repaid: Add the principal amount to the total interest. 
+      p(class='text') 3. Factor in fees: If there are any fees associated with the loan, add them to the total amount repaid to get the complete cost. 
+      p(class='text')
+      p(class='text') Using a loan calculator can simplify the process of determining the total cost of a loan. 
+      p(class='text')
+    

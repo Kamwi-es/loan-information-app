@@ -1,0 +1,27 @@
+doctype html
+// Home page
+- var appname = 'loanapp';
+- var title = 'Risk And Warnings';
+html(lang='en')
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/loanapp.css')
+  body(onload='toggle("loanContentsMenu")')
+    div(class='header')
+      include header.pug
+    div(class='menubar')
+      include menu.pug
+    div(class='body')
+      p(class='text') 
+      p(class='subheading') Some common risks include:
+      p(class='text') •	Overborrowing: Taking more than you can afford to repay.
+      p(class='text') •	Predatory Lending: Some lenders charge extremely high fees and trap borrowers in cycles of debt.
+      p(class='text') •	Late Payments and Defaults: This can damage your credit score and lead to legal action.
+      p(class='text')  NB: Always read the full loan agreement and ask questions before signing. 
+      p(class='text') 
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+      p(class='text')
+    
