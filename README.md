@@ -1,2 +1,2 @@
 # Loan Information App
-loan info desc
+This is a web-based application designed to help borrowers easily access, understand, and explore essential loan information. Unlike traditional lending platforms, this app does not issue loans. Instead, it aims to educate users, promote financial awareness, and reduce the risks of loan default by providing clear, accessible content.
