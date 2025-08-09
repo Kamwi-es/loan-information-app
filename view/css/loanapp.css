@@ -135,6 +135,7 @@ select
 .body
 {
     margin-left: 200px;
+    font-size: 1.1em;
 }
 
 .text
@@ -149,6 +150,7 @@ select
     margin-left: 20px;
     color: #3351a3;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .text-centred
