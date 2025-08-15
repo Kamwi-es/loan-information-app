@@ -67,7 +67,6 @@ async function main(app)
     adminRouter.get('/cashFlows/student', cashFlows.studentCashFlows);
     adminRouter.get('/cashFlows/personal', cashFlows.personalCashFlows);
     adminRouter.get('/cashFlows/payday', cashFlows.paydayCashFlows);
-
    
     /* /about */
     const about = require('../service/about');
