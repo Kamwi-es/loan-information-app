@@ -4,7 +4,7 @@ This is a web-based application designed to help borrowers easily access, unders
 ## Installation Instructions
 Download the source code as a zip, unzip the files, and copy the files to the development directory.
 In the development directory, from the command line enter:
-    npm init
+```    npm init
     npm install express
     npm install express-session
     npm install pug
@@ -12,6 +12,8 @@ In the development directory, from the command line enter:
     npm install log4js
     npm install mysql2
     npm install amortizejs
+```    
 
 To start the application, enter:
-    node app.js
+```    node app.js
+```
